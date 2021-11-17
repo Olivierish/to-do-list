@@ -341,4 +341,135 @@ header #close .hamb2 {
     padding: 40px 100px;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+form input {
+  display: block;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 1em;
+  font-weight: 500;
+  width: 70%;
+  max-width: 500px;
+  background: #2c2c2d;
+  border: none;
+  outline: none;
+  border: 1px solid #4b4b4b;
+  border-radius: 4px;
+  color: #f1f1f1;
+}
+
+form button {
+  display: block;
+  width: 50px;
+  font-size: 1em;
+  padding: 10px;
+  background: #222223;
+  border: 1px solid #4b4b4b;
+  border-radius: 4px;
+  outline: none;
+  color: #8d8d8d;
+  -webkit-filter: drop-shadow(0 0 0.2rem #4b4b4b);
+          filter: drop-shadow(0 0 0.2rem #4b4b4b);
+}
+
+form button:hover {
+  background: #8d8d8d;
+  color: #222223;
+}
+
+.todo-list {
+  list-style: none;
+  margin-top: 40px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.todo-list li {
+  display: block;
+  position: relative;
+  font-size: 1em;
+  width: 70%;
+  max-width: 600px;
+  padding: 10px;
+  margin-top: 5px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#2c2c2d), to(#323232));
+  background: linear-gradient(0deg, #2c2c2d, #323232);
+}
+
+.todo-list li span {
+  margin: 0 5px;
+  font-size: 1.2em;
+}
+
+.todo-list li input {
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+  margin: 0 10px;
+  -webkit-filter: invert(80%) hue-rotate(78deg) brightness(1.7);
+          filter: invert(80%) hue-rotate(78deg) brightness(1.7);
+}
+
+.todo-list li .delete-todo {
+  cursor: pointer;
+  position: absolute;
+  opacity: 0.5;
+  width: 20px;
+  height: 20px;
+  right: 10px;
+  top: 50%;
+}
+
+.todo-list li .delete-todo::before {
+  position: absolute;
+  content: "";
+  border: 1px solid white;
+  width: 20px;
+  height: 2px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: 2s ease-in-out;
+  transition: 2s ease-in-out;
+}
+
+.todo-list li .delete-todo::after {
+  position: absolute;
+  content: "";
+  border: 1px solid white;
+  width: 20px;
+  height: 2px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  -webkit-transition: 2s ease-in-out;
+  transition: 2s ease-in-out;
+}
+
+.todo-list li .delete-todo:hover {
+  opacity: 0.9;
+}
+/*# sourceMappingURL=main-style.css.map */

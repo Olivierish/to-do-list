@@ -14,3 +14,8 @@ function toggleClassName(){
         closeElt.style.display = "none";
     }
 }
+
+/**
+ * To-do list App 
+ */
+
