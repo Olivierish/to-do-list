@@ -56,15 +56,35 @@ form {
     display: block;
     position: relative;
     font-size: 1em;
-    width: 70%;
+    width: 100%;
     max-width: 600px;
     padding: 10px;
     margin-top: 5px;
     background: linear-gradient(0deg, #2c2c2d, #323232);
+    display: flex;
+    //justify-content: space-between;
+    align-items: center;
+    transition: .5s ease-in-out;
 
     span {
+      display: block;
       margin: 0 5px;
       font-size: 1.2em;
+
+      &.todo-text {
+        width: 75%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      /*
+      &.todo-text {
+        width: 100px;
+        overflow: hidden;
+        height: 1em;
+        line-height: 50px;
+        color: brown;
+      }*/
     }
 
     input {
@@ -103,5 +123,14 @@ form {
         opacity: 0.9;
       }
     }
+    &.end-of-task .todo-text {
+      text-decoration: line-through;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .todo-list li {
+    width: 70%;
   }
 }
